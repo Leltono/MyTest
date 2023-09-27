@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public float moveSpeed = 5.0f;
-    public float jumpForce = 5.0f;
+    public walkthrough://vscode_getting_started_pagefloat jumpForce = 5.0f;
     public float wallJumpForce = 10.0f;
     public float wallSlideSpeed = 1.0f;
     public float wallStickTime = 0.25f;
@@ -21,6 +21,7 @@ public class PlayerController : MonoBehaviour
 
     private int wallDirX;
 
+    public bool test;
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
